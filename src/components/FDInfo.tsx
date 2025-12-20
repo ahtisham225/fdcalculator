@@ -65,7 +65,7 @@ const FDInfo = () => {
           <p>
             The calculator also accounts for different compounding frequencies (monthly, quarterly, half-yearly, and yearly), 
             which can significantly impact your final returns. Understanding these nuances helps you choose the right FD 
-            scheme from various banks.
+            scheme from various financial institutions.
           </p>
         </div>
       </section>

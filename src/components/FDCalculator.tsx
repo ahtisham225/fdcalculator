@@ -1,8 +1,7 @@
 import { useState, useMemo } from "react";
-import { Calculator, IndianRupee, Percent, Calendar, TrendingUp } from "lucide-react";
+import { Calculator, DollarSign, Percent, Calendar, TrendingUp } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -50,11 +49,39 @@ const FDCalculator = () => {
   }, [principal, rate, tenure, tenureType, compounding]);
 
   const formatCurrency = (amount: number): string => {
-    return new Intl.NumberFormat("en-IN", {
+    return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "INR",
+      currency: "USD",
       maximumFractionDigits: 0,
     }).format(amount);
+  };
+
+  const handlePrincipalInput = (value: string) => {
+    const num = parseInt(value.replace(/,/g, ""), 10);
+    if (!isNaN(num) && num >= 0 && num <= 10000000) {
+      setPrincipal(num);
+    } else if (value === "") {
+      setPrincipal(0);
+    }
+  };
+
+  const handleRateInput = (value: string) => {
+    const num = parseFloat(value);
+    if (!isNaN(num) && num >= 0 && num <= 20) {
+      setRate(num);
+    } else if (value === "") {
+      setRate(0);
+    }
+  };
+
+  const handleTenureInput = (value: string) => {
+    const num = parseInt(value, 10);
+    const max = tenureType === "years" ? 30 : 360;
+    if (!isNaN(num) && num >= 0 && num <= max) {
+      setTenure(num);
+    } else if (value === "") {
+      setTenure(0);
+    }
   };
 
   return (
@@ -75,9 +102,15 @@ const FDCalculator = () => {
               <Label htmlFor="principal" className="text-sm font-medium text-foreground">
                 Principal Amount
               </Label>
-              <div className="flex items-center gap-1 text-sm font-semibold text-primary">
-                <IndianRupee className="w-4 h-4" />
-                {principal.toLocaleString("en-IN")}
+              <div className="flex items-center gap-1">
+                <DollarSign className="w-4 h-4 text-primary" />
+                <Input
+                  id="principal"
+                  type="text"
+                  value={principal.toLocaleString("en-US")}
+                  onChange={(e) => handlePrincipalInput(e.target.value)}
+                  className="w-32 h-8 text-right font-semibold text-primary"
+                />
               </div>
             </div>
             <Slider
@@ -89,8 +122,8 @@ const FDCalculator = () => {
               className="w-full"
             />
             <div className="flex justify-between text-xs text-muted-foreground">
-              <span>₹1,000</span>
-              <span>₹1,00,00,000</span>
+              <span>$1,000</span>
+              <span>$10,000,000</span>
             </div>
           </div>
 
@@ -100,9 +133,18 @@ const FDCalculator = () => {
               <Label htmlFor="rate" className="text-sm font-medium text-foreground">
                 Interest Rate (% p.a.)
               </Label>
-              <div className="flex items-center gap-1 text-sm font-semibold text-primary">
-                <Percent className="w-4 h-4" />
-                {rate}%
+              <div className="flex items-center gap-1">
+                <Input
+                  id="rate"
+                  type="number"
+                  value={rate}
+                  onChange={(e) => handleRateInput(e.target.value)}
+                  className="w-20 h-8 text-right font-semibold text-primary"
+                  step={0.1}
+                  min={0}
+                  max={20}
+                />
+                <Percent className="w-4 h-4 text-primary" />
               </div>
             </div>
             <Slider
@@ -125,9 +167,17 @@ const FDCalculator = () => {
               <Label htmlFor="tenure" className="text-sm font-medium text-foreground">
                 Investment Tenure
               </Label>
-              <div className="flex items-center gap-1 text-sm font-semibold text-primary">
-                <Calendar className="w-4 h-4" />
-                {tenure} {tenureType}
+              <div className="flex items-center gap-1">
+                <Calendar className="w-4 h-4 text-primary" />
+                <Input
+                  id="tenure"
+                  type="number"
+                  value={tenure}
+                  onChange={(e) => handleTenureInput(e.target.value)}
+                  className="w-20 h-8 text-right font-semibold text-primary"
+                  min={1}
+                  max={tenureType === "years" ? 30 : 360}
+                />
               </div>
             </div>
             <div className="flex gap-3">
@@ -135,7 +185,7 @@ const FDCalculator = () => {
                 value={[tenure]}
                 onValueChange={(value) => setTenure(value[0])}
                 min={1}
-                max={tenureType === "years" ? 10 : 120}
+                max={tenureType === "years" ? 30 : 120}
                 step={1}
                 className="flex-1"
               />

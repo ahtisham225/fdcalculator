@@ -8,7 +8,7 @@ const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "FD Calculator - Fixed Deposit Calculator India",
+    "name": "FD Calculator - Fixed Deposit Calculator",
     "description": "Free online FD calculator to calculate fixed deposit maturity amount and interest earned. Supports quarterly, monthly, half-yearly and yearly compounding.",
     "url": window.location.href,
     "applicationCategory": "FinanceApplication",
@@ -16,7 +16,7 @@ const Index = () => {
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "INR"
+      "priceCurrency": "USD"
     }
   };
 
@@ -26,7 +26,7 @@ const Index = () => {
         <title>FD Calculator 2024 - Calculate Fixed Deposit Maturity & Interest Online</title>
         <meta 
           name="description" 
-          content="Free FD Calculator to calculate fixed deposit maturity amount & interest. Supports monthly, quarterly compounding. Calculate FD returns for SBI, HDFC, ICICI & more." 
+          content="Free FD Calculator to calculate fixed deposit maturity amount & interest. Supports monthly, quarterly compounding. Calculate your FD returns instantly." 
         />
         <meta name="keywords" content="FD calculator, fixed deposit calculator, FD interest calculator, maturity calculator, compound interest calculator, bank FD calculator" />
         <meta name="robots" content="index, follow" />
@@ -53,7 +53,7 @@ const Index = () => {
                 </h1>
                 <p className="text-lg text-muted-foreground">
                   Plan your investments wisely with our free FD calculator. Get accurate maturity amounts 
-                  with compound interest calculations for all major Indian banks.
+                  with compound interest calculations.
                 </p>
               </div>
 

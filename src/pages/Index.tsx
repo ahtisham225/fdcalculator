@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>FD Calculator 2024 - Calculate Fixed Deposit Maturity & Interest Online</title>
+        <title>FD Calculator - Calculate Your Fixed Deposit Maturity Instantly</title>
         <meta 
           name="description" 
           content="Free FD Calculator to calculate fixed deposit maturity amount & interest. Supports monthly, quarterly compounding. Calculate your FD returns instantly." 

@@ -69,12 +69,6 @@ const Footer = () => {
           </div>
 
           {/* Made with love */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">About</h3>
-            <p className="text-sm text-muted-foreground flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-destructive fill-destructive" /> for better financial planning
-            </p>
-          </div>
         </div>
         
         <div className="border-t border-border/50 mt-8 pt-8 text-center">

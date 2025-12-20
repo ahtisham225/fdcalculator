@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-card/50 mt-16">
       <div className="container py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">

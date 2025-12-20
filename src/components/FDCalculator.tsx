@@ -191,7 +191,7 @@ const FDCalculator = () => {
               />
               <Select value={tenureType} onValueChange={(value: "months" | "years") => setTenureType(value)}>
                 <SelectTrigger className="w-28">
-                  <SelectValue />
+                <SelectValue placeholder="Select period" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="months">Months</SelectItem>
@@ -208,7 +208,7 @@ const FDCalculator = () => {
             </Label>
             <Select value={compounding} onValueChange={setCompounding}>
               <SelectTrigger>
-                <SelectValue />
+              <SelectValue placeholder="Select frequency" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="monthly">Monthly</SelectItem>

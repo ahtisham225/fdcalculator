@@ -103,7 +103,7 @@ const Contact = () => {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="john@fdcalculator.net"
                       value={formData.email}
                       onChange={handleChange}
                       required

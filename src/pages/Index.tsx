@@ -26,11 +26,11 @@ const Index = () => {
         <title>FD Calculator - Calculate Your Fixed Deposit Maturity Instantly</title>
         <meta 
           name="description" 
-          content="Free FD Calculator to calculate fixed deposit maturity amount & interest. Supports monthly, quarterly compounding. Calculate your FD returns instantly." 
+          content="Free FD Calculator to calculate fixed deposit maturity amount & interest. Supports monthly, quarterly compounding." 
         />
         <meta name="keywords" content="FD calculator, fixed deposit calculator, FD interest calculator, maturity calculator, compound interest calculator, bank FD calculator" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href="https://fdcalculator.net/" />
         <meta property="og:title" content="FD Calculator - Calculate Fixed Deposit Returns Online" />
         <meta property="og:description" content="Free online FD calculator to calculate fixed deposit maturity amount and interest earned instantly." />
         <meta property="og:type" content="website" />

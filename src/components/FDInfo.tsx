@@ -124,7 +124,7 @@ const FDInfo = () => {
             "Enter your principal amount - the amount you want to invest in the fixed deposit",
             "Set the interest rate offered by your bank (typically ranges from 5% to 8%)",
             "Choose your investment tenure using the slider or input field (in months)",
-            "Select the compounding frequency - quarterly is most common in Indian banks",
+            "Select the compounding frequency - quarterly is most common in banks",
             "View your maturity amount, total interest earned, and effective annual rate instantly",
           ].map((step, index) => (
             <div key={index} className="flex items-start gap-4 animate-fade-in" style={{ animationDelay: `${index * 50}ms` }}>
@@ -140,7 +140,7 @@ const FDInfo = () => {
       {/* Advantages of using the FD calculator */}
       <section>
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-          Advantages of using FD calculator India
+          Advantages of using FD calculator
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {advantages.map((advantage, index) => (

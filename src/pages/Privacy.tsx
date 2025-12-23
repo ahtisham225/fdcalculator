@@ -88,9 +88,15 @@ const Privacy = () => {
                 <div>
                   <h2 className="text-xl font-bold text-foreground mb-3">5. Third-Party Services</h2>
                   <p className="text-muted-foreground">
-                    We may use third-party analytics services (such as Google Analytics) to help us 
+                    We may use third-party analytics services (such as{" "}
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Google Analytics
+                    </a>) to help us 
                     understand how visitors use our website. These services may collect information about 
-                    your visits to our site in accordance with their own privacy policies.
+                    your visits to our site in accordance with their own privacy policies. Learn more about{" "}
+                    <a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      how Google uses data
+                    </a>.
                   </p>
                 </div>
 

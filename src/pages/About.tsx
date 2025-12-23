@@ -65,10 +65,20 @@ const About = () => {
                   tool for calculating fixed deposit returns. We understand that financial planning can be 
                   complex, and we believe everyone deserves access to reliable tools that simplify the process.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   Whether you're a first-time investor or an experienced saver, our calculator helps you 
                   understand exactly how your money will grow over time, accounting for different compounding 
                   frequencies and interest rates.
+                </p>
+                <p className="text-muted-foreground">
+                  Our calculations are based on standard{" "}
+                  <a href="https://www.investopedia.com/terms/c/compoundinterest.asp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    compound interest formulas
+                  </a>{" "}
+                  used by financial institutions worldwide. For more information on fixed deposits, you can also refer to{" "}
+                  <a href="https://en.wikipedia.org/wiki/Time_deposit" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    Wikipedia's guide on time deposits
+                  </a>.
                 </p>
               </div>
 

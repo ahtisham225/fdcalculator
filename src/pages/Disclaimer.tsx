@@ -78,7 +78,15 @@ const Disclaimer = () => {
                   <p className="text-muted-foreground">
                     Before making any investment decisions, we strongly recommend that you verify all 
                     calculations and terms with your chosen bank or financial institution. Interest rates, 
-                    terms, and conditions can vary significantly between institutions and may change over time.
+                    terms, and conditions can vary significantly between institutions and may change over time. 
+                    You can check current rates from resources like{" "}
+                    <a href="https://www.bankrate.com/banking/cds/cd-rates/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Bankrate
+                    </a>{" "}
+                    or consult with a{" "}
+                    <a href="https://www.cfp.net/why-cfp-certification/find-a-cfp-professional" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      certified financial planner
+                    </a>.
                   </p>
                 </div>
 

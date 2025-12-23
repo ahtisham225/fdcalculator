@@ -84,7 +84,7 @@ const Disclaimer = () => {
                       Bankrate
                     </a>{" "}
                     or consult with a{" "}
-                    <a href="https://www.cfp.net/why-cfp-certification/find-a-cfp-professional" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    <a href="https://www.cfp.net/why-get-certified/the-standard-of-excellence" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                       certified financial planner
                     </a>.
                   </p>

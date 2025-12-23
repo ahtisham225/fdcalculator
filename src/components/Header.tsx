@@ -16,8 +16,8 @@ const Header = () => {
   const navLinks = [
     { href: isHomePage ? "#calculator" : "/#calculator", label: "Calculator" },
     { href: isHomePage ? "#faq" : "/#faq", label: "FAQ" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/about/", label: "About" },
+    { href: "/contact/", label: "Contact" },
   ];
 
   return (

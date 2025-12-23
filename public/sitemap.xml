@@ -5,30 +5,29 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://fdcalculator.net/about</loc>
+    <loc>https://fdcalculator.net/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fdcalculator.net/contact</loc>
+    <loc>https://fdcalculator.net/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fdcalculator.net/privacy</loc>
+    <loc>https://fdcalculator.net/privacy/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fdcalculator.net/terms</loc>
+    <loc>https://fdcalculator.net/terms/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fdcalculator.net/disclaimer</loc>
+    <loc>https://fdcalculator.net/disclaimer/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -12,7 +12,7 @@ const Terms = () => {
           content="Read the terms of service for using FD Calculator. Understand your rights and responsibilities when using our website." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://fdcalculator.net/terms" />
+        <link rel="canonical" href="https://fdcalculator.net/terms/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

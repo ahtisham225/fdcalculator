@@ -13,7 +13,7 @@ const Disclaimer = () => {
           content="Read our disclaimer to understand the limitations and intended use of the FD Calculator tool." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`${window.location.origin}/disclaimer`} />
+        <link rel="canonical" href="https://fdcalculator.net/disclaimer" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

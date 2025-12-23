@@ -12,7 +12,7 @@ const Privacy = () => {
           content="Read our privacy policy to understand how FD Calculator collects, uses, and protects your information." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`${window.location.origin}/privacy`} />
+        <link rel="canonical" href="https://fdcalculator.net/privacy" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

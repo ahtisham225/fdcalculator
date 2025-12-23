@@ -53,7 +53,7 @@ const Contact = () => {
           content="Have questions about FD Calculator? Contact us for support, feedback, or inquiries. We're here to help with your fixed deposit calculations." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://fdcalculator.net/contact" />
+        <link rel="canonical" href="https://fdcalculator.net/contact/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

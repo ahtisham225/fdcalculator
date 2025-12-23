@@ -36,7 +36,7 @@ const About = () => {
           content="Learn about FD Calculator - your free, reliable tool for calculating fixed deposit returns. Helping investors make informed financial decisions." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://fdcalculator.net/about" />
+        <link rel="canonical" href="https://fdcalculator.net/about/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

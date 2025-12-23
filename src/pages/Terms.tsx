@@ -68,8 +68,10 @@ const Terms = () => {
                   <h2 className="text-xl font-bold text-foreground mb-3">4. Intellectual Property</h2>
                   <p className="text-muted-foreground">
                     All content on this website, including but not limited to text, graphics, logos, and 
-                    software, is the property of FD Calculator and is protected by intellectual property 
-                    laws. You may not reproduce, distribute, or create derivative works without our 
+                    software, is the property of FD Calculator and is protected by{" "}
+                    <a href="https://www.wipo.int/about-ip/en/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      intellectual property laws
+                    </a>. You may not reproduce, distribute, or create derivative works without our 
                     express permission.
                   </p>
                 </div>

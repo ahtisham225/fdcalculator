@@ -13,6 +13,18 @@ const Privacy = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/privacy/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Privacy Policy - FD Calculator" />
+        <meta property="og:description" content="Read our privacy policy to understand how FD Calculator handles your information." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fdcalculator.net/privacy/" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy - FD Calculator" />
+        <meta name="twitter:description" content="Read our privacy policy to understand how FD Calculator handles your information." />
+        <meta name="twitter:site" content="@fdcalculator" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

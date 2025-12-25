@@ -54,6 +54,18 @@ const Contact = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/contact/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Us - FD Calculator" />
+        <meta property="og:description" content="Have questions about FD Calculator? Contact us for support, feedback, or inquiries." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fdcalculator.net/contact/" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact Us - FD Calculator" />
+        <meta name="twitter:description" content="Have questions about FD Calculator? Contact us for support, feedback, or inquiries." />
+        <meta name="twitter:site" content="@fdcalculator" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Clock } from "lucide-react";
 import fdHeroImage from "@/assets/fd-hero-savings.jpg";
+import fdVsSavingsHero from "@/assets/fd-vs-savings-hero.jpg";
 
 interface Article {
   title: string;
@@ -27,7 +28,7 @@ const articles: Article[] = [
     title: "FD vs Savings Account: Which is Better?",
     description: "Compare Fixed Deposits and Savings Accounts to understand which investment option offers better returns, liquidity, and security for your financial goals.",
     slug: "/fd-vs-savings-account/",
-    image: fdHeroImage,
+    image: fdVsSavingsHero,
     readTime: "10 min read",
     category: "Comparison"
   }

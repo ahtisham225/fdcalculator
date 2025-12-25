@@ -178,6 +178,8 @@ const WhatIsFixedDeposit = () => {
               <nav className="text-sm mb-6 text-muted-foreground">
                 <Link to="/" className="hover:text-primary">Home</Link>
                 <span className="mx-2">/</span>
+                <Link to="/articles/" className="hover:text-primary">Articles</Link>
+                <span className="mx-2">/</span>
                 <span className="text-foreground">What is Fixed Deposit</span>
               </nav>
               <div className="grid lg:grid-cols-2 gap-8 items-center">

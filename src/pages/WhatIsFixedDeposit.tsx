@@ -190,11 +190,11 @@ const WhatIsFixedDeposit = () => {
                     their benefits, and how to maximize your returns.
                   </p>
                 </div>
-                <div className="hidden lg:block">
+                <div className="mt-6 lg:mt-0">
                   <img 
                     src={fdHeroImage} 
                     alt="Fixed Deposit savings and investment growth concept showing piggy bank with money plant" 
-                    className="rounded-xl shadow-lg w-full h-auto"
+                    className="rounded-xl shadow-lg w-full h-auto max-w-md mx-auto lg:max-w-none"
                     loading="eager"
                   />
                 </div>
@@ -309,11 +309,11 @@ const WhatIsFixedDeposit = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="hidden lg:block">
+                  <div className="mt-6 lg:mt-0">
                     <img 
                       src={fdSecurityImage} 
                       alt="Secure bank vault representing fixed deposit safety and guaranteed returns" 
-                      className="rounded-xl shadow-lg w-full h-auto sticky top-24"
+                      className="rounded-xl shadow-lg w-full h-auto max-w-xs mx-auto lg:max-w-none lg:sticky lg:top-24"
                       loading="lazy"
                     />
                   </div>

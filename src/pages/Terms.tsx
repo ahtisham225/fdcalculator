@@ -20,11 +20,13 @@ const Terms = () => {
         <meta property="og:url" content="https://fdcalculator.net/terms/" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Terms of Service - FD Calculator" />
         <meta name="twitter:description" content="Read the terms of service for using FD Calculator." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

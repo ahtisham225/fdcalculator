@@ -38,11 +38,15 @@ const Index = () => {
         <meta property="og:url" content="https://fdcalculator.net/" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="FD Calculator - Calculate Fixed Deposit Returns Online" />
         <meta name="twitter:description" content="Free online FD calculator to calculate fixed deposit maturity amount and interest earned instantly." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

@@ -44,11 +44,13 @@ const About = () => {
         <meta property="og:url" content="https://fdcalculator.net/about/" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About Us - FD Calculator" />
         <meta name="twitter:description" content="Learn about FD Calculator - your free, reliable tool for calculating fixed deposit returns." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

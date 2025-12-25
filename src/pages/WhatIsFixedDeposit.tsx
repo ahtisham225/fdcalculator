@@ -163,6 +163,7 @@ const WhatIsFixedDeposit = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         <meta property="article:published_time" content="2024-01-15" />
         <meta property="article:modified_time" content="2024-12-25" />
         <meta property="article:section" content="Finance" />
@@ -172,6 +173,7 @@ const WhatIsFixedDeposit = () => {
         <meta name="twitter:title" content="What is Fixed Deposit? Complete Beginner's Guide" />
         <meta name="twitter:description" content="Learn what a Fixed Deposit is, how it works, and calculate your FD returns." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

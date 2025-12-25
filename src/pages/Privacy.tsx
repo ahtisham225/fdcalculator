@@ -20,11 +20,13 @@ const Privacy = () => {
         <meta property="og:url" content="https://fdcalculator.net/privacy/" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Privacy Policy - FD Calculator" />
         <meta name="twitter:description" content="Read our privacy policy to understand how FD Calculator handles your information." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -64,11 +64,13 @@ const Articles = () => {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="FD Calculator Articles & Guides" />
         <meta name="twitter:description" content="Educational articles and guides about Fixed Deposits. Learn FD basics and investment strategies." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

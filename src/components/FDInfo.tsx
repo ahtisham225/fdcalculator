@@ -1,4 +1,5 @@
 import { CheckCircle2, Calculator, TrendingUp, Clock, Shield, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -65,7 +66,8 @@ const FDInfo = () => {
           <p>
             The calculator also accounts for different compounding frequencies (monthly, quarterly, half-yearly, and yearly), 
             which can significantly impact your final returns. Understanding these nuances helps you choose the right FD 
-            scheme from various financial institutions.
+            scheme from various financial institutions. Learn more in our comprehensive guide on{" "}
+            <Link to="/what-is-fixed-deposit/" className="text-primary hover:underline">what is a fixed deposit</Link>.
           </p>
         </div>
       </section>

@@ -22,6 +22,14 @@ const articles: Article[] = [
     image: fdHeroImage,
     readTime: "8 min read",
     category: "Basics"
+  },
+  {
+    title: "FD vs Savings Account: Which is Better?",
+    description: "Compare Fixed Deposits and Savings Accounts to understand which investment option offers better returns, liquidity, and security for your financial goals.",
+    slug: "/fd-vs-savings-account/",
+    image: fdHeroImage,
+    readTime: "10 min read",
+    category: "Comparison"
   }
 ];
 

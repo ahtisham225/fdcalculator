@@ -26,7 +26,8 @@
         { "source": "/disclaimer", "destination": "/disclaimer/", "permanent": true },
         { "source": "/terms", "destination": "/terms/", "permanent": true },
         { "source": "/articles", "destination": "/articles/", "permanent": true },
-        { "source": "/what-is-fixed-deposit", "destination": "/what-is-fixed-deposit/", "permanent": true }
+        { "source": "/what-is-fixed-deposit", "destination": "/what-is-fixed-deposit/", "permanent": true },
+        { "source": "/fd-vs-savings-account", "destination": "/fd-vs-savings-account/", "permanent": true }
     ],
     "rewrites": [{
         "source": "/(.*)",

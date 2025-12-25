@@ -21,11 +21,13 @@ const Disclaimer = () => {
         <meta property="og:url" content="https://fdcalculator.net/disclaimer/" />
         <meta property="og:site_name" content="FD Calculator" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://fdcalculator.net/og-image.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Disclaimer - FD Calculator" />
         <meta name="twitter:description" content="Read our disclaimer to understand the limitations and intended use of the FD Calculator." />
         <meta name="twitter:site" content="@fdcalculator" />
+        <meta name="twitter:image" content="https://fdcalculator.net/og-image.png" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

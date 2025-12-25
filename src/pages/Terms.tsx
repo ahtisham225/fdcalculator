@@ -13,6 +13,18 @@ const Terms = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/terms/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Terms of Service - FD Calculator" />
+        <meta property="og:description" content="Read the terms of service for using FD Calculator. Understand your rights and responsibilities." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fdcalculator.net/terms/" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms of Service - FD Calculator" />
+        <meta name="twitter:description" content="Read the terms of service for using FD Calculator." />
+        <meta name="twitter:site" content="@fdcalculator" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -57,10 +57,18 @@ const Articles = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/articles/" />
+        {/* Open Graph */}
         <meta property="og:title" content="FD Calculator Articles & Guides" />
         <meta property="og:description" content="Educational articles and guides about Fixed Deposits. Learn FD basics, calculation methods, and investment strategies." />
         <meta property="og:url" content="https://fdcalculator.net/articles/" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FD Calculator Articles & Guides" />
+        <meta name="twitter:description" content="Educational articles and guides about Fixed Deposits. Learn FD basics and investment strategies." />
+        <meta name="twitter:site" content="@fdcalculator" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

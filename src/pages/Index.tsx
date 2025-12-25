@@ -31,9 +31,18 @@ const Index = () => {
         <meta name="keywords" content="FD calculator, fixed deposit calculator, FD interest calculator, maturity calculator, compound interest calculator, bank FD calculator" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/" />
+        {/* Open Graph */}
         <meta property="og:title" content="FD Calculator - Calculate Fixed Deposit Returns Online" />
         <meta property="og:description" content="Free online FD calculator to calculate fixed deposit maturity amount and interest earned instantly." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fdcalculator.net/" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FD Calculator - Calculate Fixed Deposit Returns Online" />
+        <meta name="twitter:description" content="Free online FD calculator to calculate fixed deposit maturity amount and interest earned instantly." />
+        <meta name="twitter:site" content="@fdcalculator" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

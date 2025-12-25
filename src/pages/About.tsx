@@ -37,6 +37,18 @@ const About = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/about/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="About Us - FD Calculator" />
+        <meta property="og:description" content="Learn about FD Calculator - your free, reliable tool for calculating fixed deposit returns." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fdcalculator.net/about/" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About Us - FD Calculator" />
+        <meta name="twitter:description" content="Learn about FD Calculator - your free, reliable tool for calculating fixed deposit returns." />
+        <meta name="twitter:site" content="@fdcalculator" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

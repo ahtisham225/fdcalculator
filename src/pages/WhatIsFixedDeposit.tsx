@@ -156,10 +156,22 @@ const WhatIsFixedDeposit = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fdcalculator.net/what-is-fixed-deposit/" />
+        {/* Open Graph */}
         <meta property="og:title" content="What is Fixed Deposit? Complete Beginner's Guide 2024" />
         <meta property="og:description" content="Learn what a Fixed Deposit is, how it works, its benefits, and calculate your FD returns with our free calculator." />
         <meta property="og:url" content="https://fdcalculator.net/what-is-fixed-deposit/" />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="FD Calculator" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:published_time" content="2024-01-15" />
+        <meta property="article:modified_time" content="2024-12-25" />
+        <meta property="article:section" content="Finance" />
+        <meta property="article:tag" content="Fixed Deposit" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What is Fixed Deposit? Complete Beginner's Guide" />
+        <meta name="twitter:description" content="Learn what a Fixed Deposit is, how it works, and calculate your FD returns." />
+        <meta name="twitter:site" content="@fdcalculator" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

@@ -9,6 +9,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Check, X, TrendingUp, Shield, Wallet, Clock, Percent, ArrowLeftRight } from "lucide-react";
+import fdVsSavingsHero from "@/assets/fd-vs-savings-hero.jpg";
+import fdInterestRates from "@/assets/fd-interest-rates.jpg";
+import fdSecurityLock from "@/assets/fd-security-lock.jpg";
 
 const FDvsSavingsAccount = () => {
   const structuredData = {
@@ -193,6 +196,18 @@ const FDvsSavingsAccount = () => {
             </div>
           </section>
 
+          {/* Hero Image */}
+          <section className="container mx-auto px-4 py-8">
+            <div className="max-w-4xl mx-auto">
+              <img 
+                src={fdVsSavingsHero} 
+                alt="Fixed Deposit vs Savings Account comparison illustration showing vault and wallet" 
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="eager"
+              />
+            </div>
+          </section>
+
           {/* Main Content */}
           <article className="container mx-auto px-4 py-12">
             <div className="max-w-4xl mx-auto">
@@ -329,6 +344,12 @@ const FDvsSavingsAccount = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
                   Interest Rate Comparison
                 </h2>
+                <img 
+                  src={fdInterestRates} 
+                  alt="Interest rate growth chart showing FD returns comparison" 
+                  className="w-full md:w-2/3 mx-auto h-auto rounded-xl shadow-md mb-6"
+                  loading="lazy"
+                />
                 <div className="bg-card border border-border rounded-xl p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <Percent className="w-5 h-5 text-primary" />
@@ -369,6 +390,12 @@ const FDvsSavingsAccount = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
                   When to Choose Which Option
                 </h2>
+                <img 
+                  src={fdSecurityLock} 
+                  alt="Financial security illustration with shield and rupee symbol" 
+                  className="w-full md:w-1/2 mx-auto h-auto rounded-xl shadow-md mb-6"
+                  loading="lazy"
+                />
                 <div className="space-y-6">
                   <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">

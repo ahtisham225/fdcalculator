@@ -9,6 +9,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle, TrendingUp, Shield, Clock, Percent, Building } from "lucide-react";
+import fdHeroImage from "@/assets/fd-hero-savings.jpg";
+import fdSecurityImage from "@/assets/fd-security.jpg";
 
 const WhatIsFixedDeposit = () => {
   const structuredData = {
@@ -178,13 +180,25 @@ const WhatIsFixedDeposit = () => {
                 <span className="mx-2">/</span>
                 <span className="text-foreground">What is Fixed Deposit</span>
               </nav>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                What is Fixed Deposit?
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-                A complete beginner's guide to understanding Fixed Deposits, how they work, 
-                their benefits, and how to maximize your returns.
-              </p>
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+                    What is Fixed Deposit?
+                  </h1>
+                  <p className="text-lg md:text-xl text-muted-foreground">
+                    A complete beginner's guide to understanding Fixed Deposits, how they work, 
+                    their benefits, and how to maximize your returns.
+                  </p>
+                </div>
+                <div className="hidden lg:block">
+                  <img 
+                    src={fdHeroImage} 
+                    alt="Fixed Deposit savings and investment growth concept showing piggy bank with money plant" 
+                    className="rounded-xl shadow-lg w-full h-auto"
+                    loading="eager"
+                  />
+                </div>
+              </div>
             </div>
           </section>
 
@@ -271,26 +285,38 @@ const WhatIsFixedDeposit = () => {
 
               {/* Benefits Section */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-                  Benefits of Fixed Deposits
-                </h2>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {benefits.map((benefit, index) => (
-                    <div 
-                      key={index}
-                      className="bg-card border border-border rounded-lg p-5 hover:border-primary/50 transition-colors"
-                    >
-                      <div className="flex items-start gap-4">
-                        <div className="p-2 bg-primary/10 rounded-lg">
-                          <benefit.icon className="w-5 h-5 text-primary" />
+                <div className="grid lg:grid-cols-3 gap-8 items-start">
+                  <div className="lg:col-span-2">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                      Benefits of Fixed Deposits
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {benefits.map((benefit, index) => (
+                        <div 
+                          key={index}
+                          className="bg-card border border-border rounded-lg p-5 hover:border-primary/50 transition-colors"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="p-2 bg-primary/10 rounded-lg">
+                              <benefit.icon className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground mb-1">{benefit.title}</h3>
+                              <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-semibold text-foreground mb-1">{benefit.title}</h3>
-                          <p className="text-sm text-muted-foreground">{benefit.description}</p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                  <div className="hidden lg:block">
+                    <img 
+                      src={fdSecurityImage} 
+                      alt="Secure bank vault representing fixed deposit safety and guaranteed returns" 
+                      className="rounded-xl shadow-lg w-full h-auto sticky top-24"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </section>
 

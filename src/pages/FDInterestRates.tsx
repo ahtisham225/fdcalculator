@@ -9,6 +9,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Percent, TrendingUp, Building, Globe, Calendar, Shield, BookOpen, ArrowLeftRight, Calculator } from "lucide-react";
+import fdRatesFactors from "@/assets/fd-rates-factors.jpg";
+import fdCentralBank from "@/assets/fd-central-bank.jpg";
+import fdLaddering from "@/assets/fd-laddering.jpg";
 
 const FDInterestRates = () => {
   const structuredData = {
@@ -195,6 +198,18 @@ const FDInterestRates = () => {
             </div>
           </section>
 
+          {/* Hero Image */}
+          <section className="container mx-auto px-4 py-8">
+            <div className="max-w-4xl mx-auto">
+              <img 
+                src={fdRatesFactors} 
+                alt="Interest rate growth chart showing how FD rates increase over time with percentage indicators" 
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="eager"
+              />
+            </div>
+          </section>
+
           {/* Main Content */}
           <article className="container mx-auto px-4 py-12">
             <div className="max-w-4xl mx-auto">
@@ -224,23 +239,35 @@ const FDInterestRates = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
                   6 Key Factors That Determine FD Rates
                 </h2>
-                <div className="grid md:grid-cols-2 gap-5">
-                  {factors.map((factor, index) => (
-                    <div 
-                      key={index}
-                      className="bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-colors"
-                    >
-                      <div className="flex items-start gap-4">
-                        <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
-                          <factor.icon className="w-5 h-5 text-primary" />
+                <div className="grid lg:grid-cols-3 gap-8 items-start mb-8">
+                  <div className="lg:col-span-2">
+                    <div className="grid md:grid-cols-2 gap-5">
+                      {factors.map((factor, index) => (
+                        <div 
+                          key={index}
+                          className="bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-colors"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
+                              <factor.icon className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground mb-2">{factor.title}</h3>
+                              <p className="text-sm text-muted-foreground">{factor.description}</p>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-semibold text-foreground mb-2">{factor.title}</h3>
-                          <p className="text-sm text-muted-foreground">{factor.description}</p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                  <div className="hidden lg:block">
+                    <img 
+                      src={fdCentralBank} 
+                      alt="Central bank building with financial graphs showing how monetary policy affects FD interest rates" 
+                      className="rounded-xl shadow-md w-full h-auto sticky top-24"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </section>
 
@@ -349,44 +376,55 @@ const FDInterestRates = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
                   Tips to Get the Best FD Rates
                 </h2>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <ol className="space-y-4">
-                    <li className="flex gap-4">
-                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">1</span>
-                      <div>
-                        <h3 className="font-medium text-foreground">Compare Multiple Banks</h3>
-                        <p className="text-muted-foreground text-sm">Don't just go with your existing bank. Compare rates across 5-6 banks including online banks.</p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">2</span>
-                      <div>
-                        <h3 className="font-medium text-foreground">Consider FD Laddering</h3>
-                        <p className="text-muted-foreground text-sm">Split your investment across multiple FDs with different maturities to balance liquidity and returns.</p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">3</span>
-                      <div>
-                        <h3 className="font-medium text-foreground">Watch Rate Cycles</h3>
-                        <p className="text-muted-foreground text-sm">Lock in longer tenures when rates are high; keep shorter tenures when rates are expected to rise.</p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">4</span>
-                      <div>
-                        <h3 className="font-medium text-foreground">Look for Special Offers</h3>
-                        <p className="text-muted-foreground text-sm">Banks often run limited-time offers with bonus rates, especially during festivals or quarter-ends.</p>
-                      </div>
-                    </li>
-                    <li className="flex gap-4">
-                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">5</span>
-                      <div>
-                        <h3 className="font-medium text-foreground">Choose Optimal Tenure</h3>
-                        <p className="text-muted-foreground text-sm">The 1-2 year tenure often offers the best rates. Very long tenures may not always give proportionally higher returns.</p>
-                      </div>
-                    </li>
-                  </ol>
+                <div className="grid lg:grid-cols-5 gap-6">
+                  <div className="lg:col-span-3 bg-card border border-border rounded-xl p-6">
+                    <ol className="space-y-4">
+                      <li className="flex gap-4">
+                        <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">1</span>
+                        <div>
+                          <h3 className="font-medium text-foreground">Compare Multiple Banks</h3>
+                          <p className="text-muted-foreground text-sm">Don't just go with your existing bank. Compare rates across 5-6 banks including online banks.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">2</span>
+                        <div>
+                          <h3 className="font-medium text-foreground">Consider FD Laddering</h3>
+                          <p className="text-muted-foreground text-sm">Split your investment across multiple FDs with different maturities to balance liquidity and returns.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">3</span>
+                        <div>
+                          <h3 className="font-medium text-foreground">Watch Rate Cycles</h3>
+                          <p className="text-muted-foreground text-sm">Lock in longer tenures when rates are high; keep shorter tenures when rates are expected to rise.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">4</span>
+                        <div>
+                          <h3 className="font-medium text-foreground">Look for Special Offers</h3>
+                          <p className="text-muted-foreground text-sm">Banks often run limited-time offers with bonus rates, especially during festivals or quarter-ends.</p>
+                        </div>
+                      </li>
+                      <li className="flex gap-4">
+                        <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-sm">5</span>
+                        <div>
+                          <h3 className="font-medium text-foreground">Choose Optimal Tenure</h3>
+                          <p className="text-muted-foreground text-sm">The 1-2 year tenure often offers the best rates. Very long tenures may not always give proportionally higher returns.</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <div className="lg:col-span-2">
+                    <img 
+                      src={fdLaddering} 
+                      alt="FD laddering strategy visualization showing multiple deposit certificates with staggered maturity dates" 
+                      className="rounded-xl shadow-md w-full h-auto"
+                      loading="lazy"
+                    />
+                    <p className="text-xs text-muted-foreground text-center mt-2">FD Laddering: Stagger deposits for optimal returns</p>
+                  </div>
                 </div>
               </section>
 

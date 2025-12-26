@@ -496,41 +496,59 @@ const WhatIsFixedDeposit = () => {
                 <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
                   Related Articles
                 </h2>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-3 gap-5">
                   <Link 
                     to="/fd-vs-savings-account/"
-                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                    className="group bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-all hover:shadow-lg"
                   >
                     <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
                       <ArrowLeftRight className="w-4 h-4" />
-                      <span>Comparison Guide</span>
+                      <span>Comparison</span>
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
-                      FD vs Savings Account: Which is Better?
+                    <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD vs Savings Account
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Compare Fixed Deposits with Savings Accounts to understand which option offers better returns and liquidity for your goals.
+                    <p className="text-sm text-muted-foreground line-clamp-2">
+                      Compare FD and Savings Account returns, liquidity, and flexibility.
                     </p>
-                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
-                      Read more <span className="ml-1">→</span>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3">
+                      Read more →
+                    </span>
+                  </Link>
+                  <Link 
+                    to="/fd-interest-rates/"
+                    className="group bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
+                      <Percent className="w-4 h-4" />
+                      <span>Interest Rates</span>
+                    </div>
+                    <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD Interest Rates Explained
+                    </h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2">
+                      Learn how banks determine FD rates and maximize your returns.
+                    </p>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3">
+                      Read more →
                     </span>
                   </Link>
                   <Link 
                     to="/"
-                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                    className="group bg-card border border-border rounded-xl p-5 hover:border-primary/50 transition-all hover:shadow-lg"
                   >
                     <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
                       <Calculator className="w-4 h-4" />
                       <span>Tool</span>
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
-                      FD Calculator - Calculate Your Returns
+                    <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD Calculator
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Use our free calculator to instantly compute your FD maturity amount and interest earnings.
+                    <p className="text-sm text-muted-foreground line-clamp-2">
+                      Calculate your FD maturity amount and interest earnings instantly.
                     </p>
-                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
-                      Calculate now <span className="ml-1">→</span>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3">
+                      Calculate now →
                     </span>
                   </Link>
                 </div>

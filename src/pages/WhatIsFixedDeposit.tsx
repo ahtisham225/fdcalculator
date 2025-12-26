@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckCircle, TrendingUp, Shield, Clock, Percent, Building } from "lucide-react";
+import { CheckCircle, TrendingUp, Shield, Clock, Percent, Building, ArrowLeftRight, Calculator } from "lucide-react";
 import fdHeroImage from "@/assets/fd-hero-savings.jpg";
 import fdSecurityImage from "@/assets/fd-security.jpg";
 
@@ -237,7 +237,10 @@ const WhatIsFixedDeposit = () => {
                   Unlike a regular savings account where you can withdraw money anytime, an FD locks 
                   your money for the chosen tenure. In return, you receive a higher interest rate than 
                   savings accounts, making it an attractive option for risk-averse investors seeking 
-                  guaranteed returns.
+                  guaranteed returns. Learn more about the{" "}
+                  <Link to="/fd-vs-savings-account/" className="text-primary hover:underline font-medium">
+                    key differences between FD and Savings Account
+                  </Link>.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   According to the{" "}
@@ -486,6 +489,51 @@ const WhatIsFixedDeposit = () => {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
+              </section>
+
+              {/* Related Articles Section */}
+              <section className="mb-12">
+                <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                  Related Articles
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Link 
+                    to="/fd-vs-savings-account/"
+                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
+                      <ArrowLeftRight className="w-4 h-4" />
+                      <span>Comparison Guide</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD vs Savings Account: Which is Better?
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Compare Fixed Deposits with Savings Accounts to understand which option offers better returns and liquidity for your goals.
+                    </p>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
+                      Read more <span className="ml-1">→</span>
+                    </span>
+                  </Link>
+                  <Link 
+                    to="/"
+                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
+                      <Calculator className="w-4 h-4" />
+                      <span>Tool</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD Calculator - Calculate Your Returns
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Use our free calculator to instantly compute your FD maturity amount and interest earnings.
+                    </p>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
+                      Calculate now <span className="ml-1">→</span>
+                    </span>
+                  </Link>
+                </div>
               </section>
 
               {/* CTA Section */}

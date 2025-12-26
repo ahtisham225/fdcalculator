@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Check, X, TrendingUp, Shield, Wallet, Clock, Percent, ArrowLeftRight } from "lucide-react";
+import { Check, X, TrendingUp, Shield, Wallet, Clock, Percent, ArrowLeftRight, BookOpen, Calculator } from "lucide-react";
 import fdVsSavingsHero from "@/assets/fd-vs-savings-hero.jpg";
 import fdInterestRates from "@/assets/fd-interest-rates.jpg";
 import fdSecurityLock from "@/assets/fd-security-lock.jpg";
@@ -226,8 +226,11 @@ const FDvsSavingsAccount = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   A <strong>Savings Account</strong> offers high liquidity with lower interest rates, 
                   while a <strong>Fixed Deposit</strong> locks your money for a set period but 
-                  provides significantly higher returns. The right choice depends on your 
-                  financial goals, timeline, and need for access to funds.
+                  provides significantly higher returns. If you're new to FDs, read our comprehensive{" "}
+                  <Link to="/what-is-fixed-deposit/" className="text-primary hover:underline font-medium">
+                    guide on Fixed Deposits
+                  </Link>{" "}
+                  to understand the basics first.
                 </p>
               </section>
 
@@ -553,6 +556,51 @@ const FDvsSavingsAccount = () => {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
+              </section>
+
+              {/* Related Articles Section */}
+              <section className="mb-12">
+                <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+                  Related Articles
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Link 
+                    to="/what-is-fixed-deposit/"
+                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
+                      <BookOpen className="w-4 h-4" />
+                      <span>Beginner's Guide</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      What is Fixed Deposit? Complete Guide
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Learn everything about Fixed Deposits—how they work, types, benefits, and how to maximize your returns.
+                    </p>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
+                      Read more <span className="ml-1">→</span>
+                    </span>
+                  </Link>
+                  <Link 
+                    to="/"
+                    className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-2 text-xs text-primary font-medium mb-2">
+                      <Calculator className="w-4 h-4" />
+                      <span>Tool</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
+                      FD Calculator - Calculate Your Returns
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Use our free calculator to instantly compute your FD maturity amount and compare with savings.
+                    </p>
+                    <span className="inline-flex items-center text-primary text-sm font-medium mt-3 group-hover:gap-2 transition-all">
+                      Calculate now <span className="ml-1">→</span>
+                    </span>
+                  </Link>
+                </div>
               </section>
 
               {/* CTA Section */}

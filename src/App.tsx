@@ -13,6 +13,7 @@ import Terms from "./pages/Terms";
 import Articles from "./pages/Articles";
 import WhatIsFixedDeposit from "./pages/WhatIsFixedDeposit";
 import FDvsSavingsAccount from "./pages/FDvsSavingsAccount";
+import FDInterestRates from "./pages/FDInterestRates";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/articles/" element={<Articles />} />
             <Route path="/what-is-fixed-deposit/" element={<WhatIsFixedDeposit />} />
             <Route path="/fd-vs-savings-account/" element={<FDvsSavingsAccount />} />
+            <Route path="/fd-interest-rates/" element={<FDInterestRates />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -2,9 +2,10 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, Clock } from "lucide-react";
+import { ArrowRight, BookOpen, Clock, Percent } from "lucide-react";
 import fdHeroImage from "@/assets/fd-hero-savings.jpg";
 import fdVsSavingsHero from "@/assets/fd-vs-savings-hero.jpg";
+import fdInterestRates from "@/assets/fd-interest-rates.jpg";
 
 interface Article {
   title: string;
@@ -31,6 +32,14 @@ const articles: Article[] = [
     image: fdVsSavingsHero,
     readTime: "10 min read",
     category: "Comparison"
+  },
+  {
+    title: "FD Interest Rates: How Banks Determine Your Returns",
+    description: "Understand how banks set Fixed Deposit interest rates, factors that influence rates, and strategies to get the best FD rates for maximum returns.",
+    slug: "/fd-interest-rates/",
+    image: fdInterestRates,
+    readTime: "9 min read",
+    category: "Interest Rates"
   }
 ];
 

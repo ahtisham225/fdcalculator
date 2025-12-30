@@ -2,7 +2,7 @@
 
 ![FD Calculator](https://fdcalculator.net/favicon.ico)
 
-**FD Calculator** is a simple and reliable online tool to calculate **Fixed Deposit (FD) interest** in Pakistan and worldwide. Whether you want to know your **maturity amount**, **interest earned**, or plan your investments efficiently, FD Calculator makes it fast and accurate.
+**FD Calculator** is a simple and reliable online tool to calculate **Fixed Deposit (FD) interest** worldwide. Whether you want to know your **maturity amount**, **interest earned**, or plan your investments efficiently, FD Calculator makes it fast and accurate.
 
 ---
 
@@ -45,7 +45,7 @@
 
 ## 🔹 SEO & Keywords
 
-This project is optimized for **Fixed Deposit Calculator**, **FD Calculator Pakistan**, **FD Interest Calculator**, **Maturity Calculator**, and **Investment Planning Tool**.
+This project is optimized for **Fixed Deposit Calculator**, **FD Calculator**, **FD Interest Calculator**, **Maturity Calculator**, and **Investment Planning Tool**.
 
 ---
 

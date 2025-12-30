@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+# FD Calculator - fdcalculator.net
 
-## Project info
+![FD Calculator](https://fdcalculator.net/favicon.ico)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**FD Calculator** is a simple and reliable online tool to calculate **Fixed Deposit (FD) interest** in Pakistan and worldwide. Whether you want to know your **maturity amount**, **interest earned**, or plan your investments efficiently, FD Calculator makes it fast and accurate.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🔹 Features
 
-**Use Lovable**
+- Calculate **FD maturity amount** and **interest earned** instantly.
+- Support for **different interest compounding frequencies**: yearly, half-yearly, quarterly, monthly.
+- User-friendly interface suitable for beginners and professionals.
+- Works on **mobile, tablet, and desktop devices**.
+- SEO-optimized and lightweight, ensuring fast page load times.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔹 How to Use
 
-**Use your preferred IDE**
+1. Enter the **principal amount** you want to invest.
+2. Enter the **interest rate** (annual %).
+3. Select the **investment tenure** (years/months/days).
+4. Choose the **compounding frequency**.
+5. Click **Calculate** to get your **maturity amount** and **interest earned**.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔹 Benefits of FD Calculator
 
-Follow these steps:
+- Plan your investments with precision.
+- Estimate returns before investing.
+- Compare different FD options easily.
+- Save time with an **instant and accurate calculator**.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔹 Technologies Used
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **HTML5**, **CSS3**, **JavaScript**
+- **Responsive design** for all devices
+- SEO-friendly architecture
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🔹 SEO & Keywords
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is optimized for **Fixed Deposit Calculator**, **FD Calculator Pakistan**, **FD Interest Calculator**, **Maturity Calculator**, and **Investment Planning Tool**.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔹 Contributing
 
-## What technologies are used for this project?
+Contributions are welcome! You can help by:
 
-This project is built with:
+- Improving UI/UX
+- Adding new features like **multi-currency support**
+- Fixing bugs
+- Enhancing SEO and performance
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Steps to contribute:**
 
-## How can I deploy this project?
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add feature'`)
+5. Push to the branch (`git push origin feature-name`)
+6. Open a Pull Request
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🔹 Live Demo
 
-Yes, you can!
+Check out the live FD Calculator here: [https://fdcalculator.net](https://fdcalculator.net)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🔹 License
+---
+
+**Keywords:** FD Calculator, Fixed Deposit Calculator, FD Interest Calculator, FD Maturity Calculator, Investment Calculator, fdcalculator.net

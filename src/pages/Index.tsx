@@ -65,7 +65,7 @@ const Index = () => {
                   <span className="gradient-text block mt-2">Calculate Your FD Returns Instantly</span>
                 </h1>
                 <p className="text-lg text-muted-foreground">
-                  Plan your investments wisely with our free FD calculator. Get accurate maturity amounts 
+                  Plan your investments wisely with our free <a href="https://fdcalculator.net" className="text-primary hover:underline">FD calculator</a>. Get accurate maturity amounts 
                   with compound interest calculations.
                 </p>
               </div>

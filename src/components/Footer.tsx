@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} <a href="https://fdcalculator.net" className="hover:text-foreground transition-colors">FD Calculator</a>. All calculations are for informational purposes only. 
+            © {new Date().getFullYear()} FD Calculator. All calculations are for informational purposes only. 
             Please verify with your financial institution for exact rates and terms.
           </p>
         </div>
